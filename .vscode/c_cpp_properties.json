@@ -1,0 +1,41 @@
+{
+  "env": {
+    // Change this to your need! Comment the following line out if you're on Linux.
+    "devkitPro": "C:/devkitPro"
+  },
+  "configurations": [
+    {
+      "name": "3DS",
+      "forcedInclude": [
+        "${workspaceFolder}/inc/vscode_fix.h"
+      ],
+      "includePath": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/inc/**",
+        "${devkitPro}/libctru/include/**",
+        "${devkitPro}/devkitARM/arm-none-eabi/include/**"
+      ],
+      "defines": [
+        "_DEBUG",
+        "_UNICODE",
+        "WIN32",
+        "ARM7",
+        "ARM9"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}",
+          "${workspaceFolder}/inc/**",
+          "${devkitPro}/devkitARM/libctru/include/**",
+          "${devkitPro}/devkitARM/arm-none-eabi/include/**"
+        ],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "cStandard": "c17",
+      "cppStandard": "c++20",
+      "compilerPath": "${devkitPro}/devkitARM/bin/arm-none-eabi-g++.exe"
+    }
+  ],
+  "version": 4
+}
